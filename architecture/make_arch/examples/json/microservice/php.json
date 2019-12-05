@@ -1,0 +1,134 @@
+{
+  "service_name": "php", 
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_fcgi_req", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "resp_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_fopen_req", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "resp_time_model": {
+            "latency": 48.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 48.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 2, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_fput", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "resp_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 2
+        }, 
+        {
+          "stage_id": 3, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_find_done", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "resp_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 3
+        }, 
+        {
+          "stage_id": 4, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_get_bytes", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "resp_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 4
+        }, 
+        {
+          "stage_id": 5, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "php_mmc_store", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "resp_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 40.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 5
+        }
+      ], 
+      "num_stages": 6, 
+      "code_path_id": 0, 
+      "probability": 1.0
+    }
+  ], 
+  "type": "micro_service", 
+  "bind_connection": false
+}

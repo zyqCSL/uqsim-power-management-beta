@@ -1,0 +1,125 @@
+{
+  "microservices": [
+    {
+      "instance_name": "nginx", 
+      "service_name": "nginx", 
+      "machine_id": 0, 
+      "scheduler": {
+        "num_threads": 2, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21
+        ]
+      }, 
+      "service_domain": ""
+    }, 
+    {
+      "instance_name": "php", 
+      "service_name": "php", 
+      "machine_id": 1, 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "service_domain": ""
+    }, 
+    {
+      "instance_name": "php_io", 
+      "service_name": "php_io", 
+      "machine_id": 1, 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          24
+        ]
+      }, 
+      "service_domain": ""
+    }, 
+    {
+      "instance_name": "memcached", 
+      "service_name": "memcached", 
+      "machine_id": 2, 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "service_domain": ""
+    }, 
+    {
+      "instance_name": "mongodb", 
+      "service_name": "mongodb", 
+      "machine_id": 3, 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "service_domain": ""
+    }, 
+    {
+      "instance_name": "mongo_io", 
+      "service_name": "mongo_io", 
+      "machine_id": 3, 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          24
+        ]
+      }, 
+      "service_domain": ""
+    }
+  ], 
+  "edges": [
+    {
+      "biDirectional": true, 
+      "source": "nginx", 
+      "target": "memcached"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "nginx", 
+      "target": "php"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "php", 
+      "target": "mongodb"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "php", 
+      "target": "memcached"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "php", 
+      "target": "php_io"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "mongodb", 
+      "target": "mongo_io"
+    }
+  ], 
+  "net_latency": 30.0
+}

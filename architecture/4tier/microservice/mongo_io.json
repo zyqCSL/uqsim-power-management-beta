@@ -1,0 +1,30 @@
+{
+  "service_name": "mongo_io", 
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "proc", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 85.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 0, 
+      "probability": 1.0
+    }
+  ], 
+  "type": "micro_service", 
+  "bind_connection": false
+}

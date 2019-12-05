@@ -1,0 +1,54 @@
+{
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "scale_factor": 0.55, 
+          "socket": false, 
+          "epoll": true, 
+          "chunk": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "scale_factor": 0.4, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc_req", 
+          "blocking": false, 
+          "ngx_proc": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 19000, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }
+      ], 
+      "num_stages": 2, 
+      "code_path_id": 0, 
+      "probability": 100
+    }
+  ], 
+  "service_name": "nginx", 
+  "base_freq": 2600, 
+  "cur_freq": 2600, 
+  "type": "micro_service", 
+  "bind_connection": true
+}

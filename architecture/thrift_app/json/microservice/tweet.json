@@ -1,0 +1,56 @@
+{
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "scale_factor": 0.55, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": false, 
+          "stage_name": "tweet_proc", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 180000, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "scale_factor": 0.55, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": false, 
+          "stage_name": "thrift_proc", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 0, 
+            "type": "const"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }
+      ], 
+      "num_stages": 2, 
+      "code_path_id": 0, 
+      "probability": 100
+    }
+  ], 
+  "service_name": "tweet", 
+  "base_freq": 2600, 
+  "cur_freq": 2600, 
+  "type": "micro_service", 
+  "bind_connection": true
+}

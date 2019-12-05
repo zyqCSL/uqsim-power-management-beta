@@ -1,0 +1,20 @@
+{
+  "microservices": [
+    {
+      "service_name": "thrift_hw", 
+      "service_domain": "", 
+      "instance_name": "thrift_hw", 
+      "scheduler": {
+        "num_threads": 50, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "thrift_hw"
+    }
+  ], 
+  "edges": [], 
+  "net_latency": 65000
+}

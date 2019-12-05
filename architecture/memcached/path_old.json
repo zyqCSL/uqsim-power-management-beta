@@ -1,0 +1,31 @@
+[
+  {
+    "entry": 0, 
+    "nodes": [
+      {
+        "end_stage": -1, 
+        "childs": [
+          1
+        ], 
+        "service_name": "memcached", 
+        "sync": false, 
+        "start_stage": 0, 
+        "node_id": 0, 
+        "service_function": "", 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [], 
+        "service_name": "client", 
+        "sync": false, 
+        "start_stage": 0, 
+        "node_id": 1, 
+        "service_function": "", 
+        "code_path": -1
+      }
+    ], 
+    "probability": 1.0, 
+    "micro_service_path_id": 0
+  }
+]

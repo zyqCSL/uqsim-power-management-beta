@@ -1,0 +1,249 @@
+{
+  "microservices": [
+    {
+      "service_name": "compose", 
+      "service_domain": "", 
+      "instance_name": "compose", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "compose"
+    }, 
+    {
+      "service_name": "user", 
+      "service_domain": "", 
+      "instance_name": "user", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          31
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "user"
+    }, 
+    {
+      "service_name": "user_memcached", 
+      "service_domain": "", 
+      "instance_name": "user_memcached", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          32
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "memcached"
+    }, 
+    {
+      "service_name": "user_mongodb", 
+      "service_domain": "", 
+      "instance_name": "user_mongodb", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          34
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongodb"
+    }, 
+    {
+      "service_name": "user_mongodb_io", 
+      "service_domain": "", 
+      "instance_name": "user_mongodb_io", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          34
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongo_io"
+    }, 
+    {
+      "service_name": "tweet", 
+      "service_domain": "", 
+      "instance_name": "tweet", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          41
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "tweet"
+    }, 
+    {
+      "service_name": "tweet_memcached", 
+      "service_domain": "", 
+      "instance_name": "tweet_memcached", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          42
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "memcached"
+    }, 
+    {
+      "service_name": "tweet_mongodb", 
+      "service_domain": "", 
+      "instance_name": "tweet_mongodb", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          43
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongodb"
+    }, 
+    {
+      "service_name": "tweet_mongodb_io", 
+      "service_domain": "", 
+      "instance_name": "tweet_mongodb_io", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          44
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongo_io"
+    }, 
+    {
+      "service_name": "file", 
+      "service_domain": "", 
+      "instance_name": "file", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          51
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "file"
+    }, 
+    {
+      "service_name": "file_memcached", 
+      "service_domain": "", 
+      "instance_name": "file_memcached", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          52
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "memcached"
+    }, 
+    {
+      "service_name": "file_mongodb", 
+      "service_domain": "", 
+      "instance_name": "file_mongodb", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          53
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongodb"
+    }, 
+    {
+      "service_name": "file_mongodb_io", 
+      "service_domain": "", 
+      "instance_name": "file_mongodb_io", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          54
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "mongo_io"
+    }
+  ], 
+  "edges": [
+    {
+      "biDirectional": true, 
+      "source": "compose", 
+      "target": "user"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "compose", 
+      "target": "tweet"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "compose", 
+      "target": "file"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "user", 
+      "target": "user_memcached"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "user", 
+      "target": "user_mongodb"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "user_mongodb", 
+      "target": "user_mongodb_io"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "tweet", 
+      "target": "tweet_memcached"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "tweet", 
+      "target": "tweet_mongodb"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "tweet_mongodb", 
+      "target": "tweet_mongodb_io"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "file", 
+      "target": "file_memcached"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "file", 
+      "target": "file_mongodb"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "file_mongodb", 
+      "target": "file_mongodb_io"
+    }
+  ], 
+  "net_latency": 65000
+}

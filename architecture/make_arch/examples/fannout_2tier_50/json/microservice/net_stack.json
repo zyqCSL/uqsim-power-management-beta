@@ -1,0 +1,109 @@
+{
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "scale_factor": 0.0, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc_send_local", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 1.5, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 0
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 1, 
+          "scale_factor": 0.0, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc_send_remote", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 1.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 1
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 2, 
+          "scale_factor": 0.0, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc_recv_local", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 1.5, 
+            "type": "expo"
+          }, 
+          "code_path_id": 2, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 2
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 3, 
+          "scale_factor": 0.0, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc_recv_remote", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 4.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 3, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 3
+    }
+  ], 
+  "service_name": "net_stack", 
+  "base_freq": 2.6, 
+  "cur_freq": 2.6, 
+  "type": "micro_service", 
+  "bind_connection": true
+}

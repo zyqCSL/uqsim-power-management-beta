@@ -1,0 +1,95 @@
+[
+  {
+    "entry": 0, 
+    "nodes": [
+      {
+        "end_stage": -1, 
+        "childs": [
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ], 
+        "service_name": "load_balancer", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 0, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "leaf_service_0", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 1, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "leaf_service_1", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 2, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "leaf_service_2", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 3, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "leaf_service_3", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 4, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "leaf_service_4", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 5, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [], 
+        "service_name": "client", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 6, 
+        "code_path": -1
+      }
+    ], 
+    "probability": 100, 
+    "micro_service_path_id": 0
+  }
+]

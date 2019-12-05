@@ -1,0 +1,1 @@
+nginx: 2400; memcached: 2400; cur_round: 6

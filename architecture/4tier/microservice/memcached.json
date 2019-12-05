@@ -1,0 +1,117 @@
+{
+  "service_name": "memcached", 
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1.5, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "socket": true, 
+          "chunk": false, 
+          "stage_name": "socket", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 2.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 2, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "proc_read", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 6.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 2
+        }
+      ], 
+      "num_stages": 3, 
+      "code_path_id": 0, 
+      "probability": 0.5
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1.5, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "socket": true, 
+          "chunk": false, 
+          "stage_name": "socket", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 2.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 3, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "proc_write", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 7.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 2
+        }
+      ], 
+      "num_stages": 3, 
+      "code_path_id": 1, 
+      "probability": 0.5
+    }
+  ], 
+  "type": "micro_service", 
+  "bind_connection": true
+}

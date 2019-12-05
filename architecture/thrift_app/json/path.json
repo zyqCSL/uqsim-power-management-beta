@@ -1,0 +1,164 @@
+[
+  {
+    "entry": 0, 
+    "nodes": [
+      {
+        "end_stage": -1, 
+        "childs": [
+          1, 
+          4
+        ], 
+        "service_name": "compose", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 0, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          2
+        ], 
+        "service_name": "user", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 1, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          3
+        ], 
+        "service_name": "user_memcached", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 2, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          30
+        ], 
+        "service_name": "user", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 3, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          5
+        ], 
+        "service_name": "tweet", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 4, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          6
+        ], 
+        "service_name": "tweet_memcached", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 5, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          30
+        ], 
+        "service_name": "tweet", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 6, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          31
+        ], 
+        "service_name": "compose", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 30, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          32
+        ], 
+        "service_name": "file", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 31, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          33
+        ], 
+        "service_name": "file_memcached", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 32, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          50
+        ], 
+        "service_name": "file", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 33, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          51
+        ], 
+        "service_name": "compose", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 50, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [], 
+        "service_name": "client", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 51, 
+        "code_path": 0
+      }
+    ], 
+    "probability": 100.0, 
+    "micro_service_path_id": 0
+  }
+]

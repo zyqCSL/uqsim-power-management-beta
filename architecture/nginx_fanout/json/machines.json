@@ -1,0 +1,920 @@
+[
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 0, 
+    "total_cores": 40, 
+    "name": "machine_0"
+  }, 
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 1, 
+    "total_cores": 40, 
+    "name": "machine_1"
+  }, 
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 2, 
+    "total_cores": 40, 
+    "name": "machine_2"
+  }, 
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 3, 
+    "total_cores": 40, 
+    "name": "machine_3"
+  }, 
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 4, 
+    "total_cores": 40, 
+    "name": "machine_4"
+  }, 
+  {
+    "net_stack_sched": {
+      "num_queues": 20, 
+      "type": "LinuxNetStack", 
+      "core_affinity": [
+        {
+          "queue": 0, 
+          "cores": [
+            0
+          ]
+        }, 
+        {
+          "queue": 1, 
+          "cores": [
+            1
+          ]
+        }, 
+        {
+          "queue": 2, 
+          "cores": [
+            2
+          ]
+        }, 
+        {
+          "queue": 3, 
+          "cores": [
+            3
+          ]
+        }, 
+        {
+          "queue": 4, 
+          "cores": [
+            4
+          ]
+        }, 
+        {
+          "queue": 5, 
+          "cores": [
+            5
+          ]
+        }, 
+        {
+          "queue": 6, 
+          "cores": [
+            6
+          ]
+        }, 
+        {
+          "queue": 7, 
+          "cores": [
+            7
+          ]
+        }, 
+        {
+          "queue": 8, 
+          "cores": [
+            8
+          ]
+        }, 
+        {
+          "queue": 9, 
+          "cores": [
+            9
+          ]
+        }, 
+        {
+          "queue": 10, 
+          "cores": [
+            10
+          ]
+        }, 
+        {
+          "queue": 11, 
+          "cores": [
+            11
+          ]
+        }, 
+        {
+          "queue": 12, 
+          "cores": [
+            12
+          ]
+        }, 
+        {
+          "queue": 13, 
+          "cores": [
+            13
+          ]
+        }, 
+        {
+          "queue": 14, 
+          "cores": [
+            14
+          ]
+        }, 
+        {
+          "queue": 15, 
+          "cores": [
+            15
+          ]
+        }, 
+        {
+          "queue": 16, 
+          "cores": [
+            16
+          ]
+        }, 
+        {
+          "queue": 17, 
+          "cores": [
+            17
+          ]
+        }, 
+        {
+          "queue": 18, 
+          "cores": [
+            18
+          ]
+        }, 
+        {
+          "queue": 19, 
+          "cores": [
+            19
+          ]
+        }
+      ], 
+      "cores": [
+        0, 
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10, 
+        11, 
+        12, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18, 
+        19
+      ]
+    }, 
+    "machine_id": 5, 
+    "total_cores": 40, 
+    "name": "machine_5"
+  }
+]

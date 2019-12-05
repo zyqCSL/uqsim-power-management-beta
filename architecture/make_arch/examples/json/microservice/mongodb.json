@@ -1,0 +1,95 @@
+{
+  "service_name": "mongodb", 
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "mem_access_hit", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 75.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }
+      ], 
+      "num_stages": 1, 
+      "code_path_id": 0
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "mem_access_miss", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "resp_time_model": {
+            "latency": 10.0, 
+            "type": "const"
+          }, 
+          "recv_time_model": {
+            "latency": 100.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "socket": false, 
+          "chunk": true, 
+          "chunk_model": {
+            "type": "expo", 
+            "number": 3
+          }, 
+          "stage_name": "io", 
+          "blocking": true, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "resp_time_model": {
+            "latency": 100.0, 
+            "type": "expo"
+          }, 
+          "recv_time_model": {
+            "latency": 0.0, 
+            "type": "const"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 2, 
+          "socket": false, 
+          "chunk": false, 
+          "stage_name": "mem_fill", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 80.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 2
+        }
+      ], 
+      "num_stages": 3, 
+      "code_path_id": 1
+    }
+  ], 
+  "type": "micro_service", 
+  "bind_connection": true
+}

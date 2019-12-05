@@ -1,0 +1,181 @@
+{
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "scale_factor": 0.55, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "scale_factor": 0.35, 
+          "socket": true, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "sock_read", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 2, 
+          "scale_factor": 0.45, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "memc_proc", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 600, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 2
+        }, 
+        {
+          "stage_id": 3, 
+          "scale_factor": 0.3, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "memc_send", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 7500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 3
+        }
+      ], 
+      "num_stages": 4, 
+      "code_path_id": 0
+    }, 
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "scale_factor": 0.55, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "scale_factor": 0.35, 
+          "socket": true, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "sock_read", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 1
+        }, 
+        {
+          "stage_id": 4, 
+          "scale_factor": 0.45, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "memc_proc", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 800, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 2
+        }, 
+        {
+          "stage_id": 3, 
+          "scale_factor": 0.3, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "use_histogram": true, 
+          "stage_name": "memc_send", 
+          "blocking": false, 
+          "ngx_proc": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 7500, 
+            "type": "expo"
+          }, 
+          "code_path_id": 1, 
+          "path_stage_id": 3
+        }
+      ], 
+      "num_stages": 4, 
+      "code_path_id": 1
+    }
+  ], 
+  "service_name": "memcached", 
+  "base_freq": 2600, 
+  "cur_freq": 2600, 
+  "type": "micro_service", 
+  "bind_connection": true
+}

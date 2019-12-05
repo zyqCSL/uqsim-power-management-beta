@@ -1,0 +1,19 @@
+{
+  "microservices": [
+    {
+      "instance_name": "nginx", 
+      "service_name": "nginx", 
+      "machine_id": 0, 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "service_domain": ""
+    }
+  ], 
+  "edges": [], 
+  "net_latency": 30.0
+}

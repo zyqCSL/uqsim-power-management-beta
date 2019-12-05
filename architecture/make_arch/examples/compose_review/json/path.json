@@ -1,0 +1,55 @@
+[
+  {
+    "entry": 0, 
+    "nodes": [
+      {
+        "end_stage": -1, 
+        "childs": [
+          1
+        ], 
+        "service_name": "nginx", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 0, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          2
+        ], 
+        "service_name": "memcached", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 1, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [
+          3
+        ], 
+        "service_name": "nginx", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 2, 
+        "code_path": 0
+      }, 
+      {
+        "end_stage": -1, 
+        "childs": [], 
+        "service_name": "client", 
+        "sync": false, 
+        "service_domain": "", 
+        "start_stage": 0, 
+        "node_id": 3, 
+        "code_path": -1
+      }
+    ], 
+    "probability": 1.0, 
+    "micro_service_path_id": 0
+  }
+]

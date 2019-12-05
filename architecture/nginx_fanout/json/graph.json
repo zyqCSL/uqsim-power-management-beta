@@ -1,0 +1,134 @@
+{
+  "microservices": [
+    {
+      "service_name": "nginx_frontend", 
+      "service_domain": "", 
+      "instance_name": "nginx_frontend", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "nginx_frontend"
+    }, 
+    {
+      "service_name": "nginx_leaf_0", 
+      "service_domain": "", 
+      "instance_name": "nginx_leaf_0", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 1, 
+      "model_name": "nginx_file_server"
+    }, 
+    {
+      "service_name": "nginx_leaf_1", 
+      "service_domain": "", 
+      "instance_name": "nginx_leaf_1", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 2, 
+      "model_name": "nginx_file_server"
+    }, 
+    {
+      "service_name": "nginx_leaf_2", 
+      "service_domain": "", 
+      "instance_name": "nginx_leaf_2", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 3, 
+      "model_name": "nginx_file_server"
+    }, 
+    {
+      "service_name": "nginx_leaf_3", 
+      "service_domain": "", 
+      "instance_name": "nginx_leaf_3", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 4, 
+      "model_name": "nginx_file_server"
+    }, 
+    {
+      "service_name": "nginx_leaf_4", 
+      "service_domain": "", 
+      "instance_name": "nginx_leaf_4", 
+      "scheduler": {
+        "num_threads": 4, 
+        "type": "CMT", 
+        "cores": [
+          20, 
+          21, 
+          22, 
+          23
+        ]
+      }, 
+      "machine_id": 5, 
+      "model_name": "nginx_file_server"
+    }
+  ], 
+  "edges": [
+    {
+      "biDirectional": true, 
+      "source": "nginx_frontend", 
+      "target": "nginx_leaf_0"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "nginx_frontend", 
+      "target": "nginx_leaf_1"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "nginx_frontend", 
+      "target": "nginx_leaf_2"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "nginx_frontend", 
+      "target": "nginx_leaf_3"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "nginx_frontend", 
+      "target": "nginx_leaf_4"
+    }
+  ], 
+  "net_latency": 65000
+}

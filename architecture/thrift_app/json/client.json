@@ -1,0 +1,9 @@
+{
+  "monitor_interval_sec": 1, 
+  "epoch_qps": [
+    80000
+  ], 
+  "epoch_end_sec": [
+    60
+  ]
+}

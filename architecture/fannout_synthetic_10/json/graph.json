@@ -1,0 +1,211 @@
+{
+  "microservices": [
+    {
+      "service_name": "load_balancer", 
+      "service_domain": "", 
+      "instance_name": "load_balancer", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 0, 
+      "model_name": "load_balancer"
+    }, 
+    {
+      "service_name": "leaf_service_0", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_0", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 1, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_1", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_1", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 2, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_2", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_2", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 3, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_3", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_3", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 4, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_4", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_4", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 5, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_5", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_5", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 6, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_6", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_6", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 7, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_7", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_7", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 8, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_8", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_8", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 9, 
+      "model_name": "leaf_service"
+    }, 
+    {
+      "service_name": "leaf_service_9", 
+      "service_domain": "", 
+      "instance_name": "leaf_service_9", 
+      "scheduler": {
+        "num_threads": 1, 
+        "type": "CMT", 
+        "cores": [
+          20
+        ]
+      }, 
+      "machine_id": 10, 
+      "model_name": "leaf_service"
+    }
+  ], 
+  "edges": [
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_0"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_1"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_2"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_3"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_4"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_5"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_6"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_7"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_8"
+    }, 
+    {
+      "biDirectional": true, 
+      "source": "load_balancer", 
+      "target": "leaf_service_9"
+    }
+  ], 
+  "net_latency": 65000
+}

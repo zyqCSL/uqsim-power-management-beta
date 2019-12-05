@@ -1,0 +1,48 @@
+{
+  "service_name": "nginx", 
+  "paths": [
+    {
+      "stages": [
+        {
+          "stage_id": 0, 
+          "socket": false, 
+          "epoll": true, 
+          "chunk": false, 
+          "stage_name": "epoll", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": true, 
+          "net": false, 
+          "recv_time_model": {
+            "latency": 1.5, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 0
+        }, 
+        {
+          "stage_id": 1, 
+          "socket": false, 
+          "epoll": false, 
+          "chunk": false, 
+          "stage_name": "proc", 
+          "blocking": false, 
+          "critical_section": false, 
+          "batching": false, 
+          "net": true, 
+          "recv_time_model": {
+            "latency": 20.0, 
+            "type": "expo"
+          }, 
+          "code_path_id": 0, 
+          "path_stage_id": 1
+        }
+      ], 
+      "num_stages": 2, 
+      "code_path_id": 0, 
+      "probability": 1.0
+    }
+  ], 
+  "type": "micro_service", 
+  "bind_connection": true
+}
